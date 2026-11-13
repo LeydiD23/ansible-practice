@@ -1,0 +1,59 @@
+
+PLAY [Configure Ubuntu servers] ************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [ubuntu2]
+ok: [ubuntu4]
+ok: [ubuntu5]
+ok: [ubuntu1]
+ok: [ubuntu3]
+
+TASK [Update APT cache] ********************************************************
+ok: [ubuntu3]
+ok: [ubuntu2]
+ok: [ubuntu4]
+ok: [ubuntu1]
+ok: [ubuntu5]
+
+TASK [Create group itla] *******************************************************
+ok: [ubuntu4]
+ok: [ubuntu3]
+ok: [ubuntu5]
+ok: [ubuntu1]
+ok: [ubuntu2]
+
+TASK [Create user itla] ********************************************************
+ok: [ubuntu1]
+ok: [ubuntu4]
+ok: [ubuntu5]
+ok: [ubuntu2]
+ok: [ubuntu3]
+
+TASK [Create app directory] ****************************************************
+ok: [ubuntu2]
+ok: [ubuntu3]
+ok: [ubuntu5]
+ok: [ubuntu1]
+ok: [ubuntu4]
+
+TASK [Create hola.txt file] ****************************************************
+ok: [ubuntu1]
+ok: [ubuntu2]
+ok: [ubuntu3]
+ok: [ubuntu4]
+ok: [ubuntu5]
+
+TASK [Install cowsay and htop] *************************************************
+ok: [ubuntu2]
+ok: [ubuntu1]
+ok: [ubuntu3]
+ok: [ubuntu5]
+ok: [ubuntu4]
+
+PLAY RECAP *********************************************************************
+ubuntu1                    : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+ubuntu2                    : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+ubuntu3                    : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+ubuntu4                    : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+ubuntu5                    : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

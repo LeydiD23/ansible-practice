@@ -1,0 +1,60 @@
+=== ubuntu1 ===
+uid=1001(itla) gid=1001(itla) groups=1001(itla)
+-rw-r--r-- 1 itla itla 0 Nov 13 12:37 /home/itla/app/hola.txt
+ ___________
+< Hola ITLA >
+ -----------
+        \   ^__^
+         \  (--)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+htop 3.0.5
+=== ubuntu2 ===
+uid=1001(itla) gid=1001(itla) groups=1001(itla)
+-rw-r--r-- 1 itla itla 0 Nov 13 12:37 /home/itla/app/hola.txt
+ ___________
+< Hola ITLA >
+ -----------
+        \   ^__^
+         \  (--)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+htop 3.0.5
+=== ubuntu3 ===
+uid=1001(itla) gid=1001(itla) groups=1001(itla)
+-rw-r--r-- 1 itla itla 0 Nov 13 12:37 /home/itla/app/hola.txt
+ ___________
+< Hola ITLA >
+ -----------
+        \   ^__^
+         \  (--)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+htop 3.0.5
+=== ubuntu4 ===
+uid=1001(itla) gid=1001(itla) groups=1001(itla)
+-rw-r--r-- 1 itla itla 0 Nov 13 12:37 /home/itla/app/hola.txt
+ ___________
+< Hola ITLA >
+ -----------
+        \   ^__^
+         \  (--)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+htop 3.0.5
+=== ubuntu5 ===
+uid=1001(itla) gid=1001(itla) groups=1001(itla)
+-rw-r--r-- 1 itla itla 0 Nov 13 12:37 /home/itla/app/hola.txt
+ ___________
+< Hola ITLA >
+ -----------
+        \   ^__^
+         \  (--)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+htop 3.0.5

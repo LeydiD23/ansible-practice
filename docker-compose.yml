@@ -1,0 +1,55 @@
+services:
+  ubuntu1:
+    build: .
+    container_name: ubuntu1
+    hostname: ubuntu1
+    privileged: true
+    ports:
+      - "2201:22"
+    environment:
+      - SSH_PASSWORD=ansible
+      - USERNAME=ansible
+
+  ubuntu2:
+    build: .
+    container_name: ubuntu2
+    hostname: ubuntu2
+    privileged: true
+    ports:
+      - "2202:22"
+    environment:
+      - SSH_PASSWORD=ansible
+      - USERNAME=ansible
+
+  ubuntu3:
+    build: .
+    container_name: ubuntu3
+    hostname: ubuntu3
+    privileged: true
+    ports:
+      - "2203:22"
+    environment:
+      - SSH_PASSWORD=ansible
+      - USERNAME=ansible
+
+  ubuntu4:
+    build: .
+    container_name: ubuntu4
+    hostname: ubuntu4
+    privileged: true
+    ports:
+      - "2204:22"
+    environment:
+      - SSH_PASSWORD=ansible
+      - USERNAME=ansible
+
+  ubuntu5:
+    build: .
+    container_name: ubuntu5
+    hostname: ubuntu5
+    privileged: true
+    ports:
+      - "2205:22"
+    environment:
+      - SSH_PASSWORD=ansible
+      - USERNAME=ansible

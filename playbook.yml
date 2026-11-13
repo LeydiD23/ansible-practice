@@ -1,0 +1,48 @@
+---
+- name: Configure Ubuntu servers
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Update APT cache
+      ansible.builtin.apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Create group itla
+      ansible.builtin.group:
+        name: itla
+        state: present
+
+    - name: Create user itla
+      ansible.builtin.user:
+        name: itla
+        group: itla
+        shell: /bin/bash
+        create_home: yes
+        state: present
+
+    - name: Create app directory
+      ansible.builtin.file:
+        path: /home/itla/app
+        state: directory
+        owner: itla
+        group: itla
+        mode: '0755'
+
+    - name: Create hola.txt file
+      ansible.builtin.file:
+        path: /home/itla/app/hola.txt
+        state: touch
+        owner: itla
+        group: itla
+        mode: '0644'
+        modification_time: preserve
+        access_time: preserve
+
+    - name: Install cowsay and htop
+      ansible.builtin.apt:
+        name:
+          - cowsay
+          - htop
+        state: present
+        update_cache: yes
