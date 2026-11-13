@@ -52,7 +52,7 @@ ansible --version
 
 El `Dockerfile` crea el usuario `ansible` con contrasena `ansible` y permisos `sudo` sin contrasena. El archivo `inventory.ini` contiene el usuario, la contrasena y el puerto de cada servidor.
 
-En este entorno no estaba instalado `sshpass`, por lo que se agrego `setup-ssh-keys.sh` para copiar una clave SSH publica a los cinco contenedores y permitir la conexion con Ansible:
+En este entorno no estaba instalado `sshpass`, por lo que se agrego `setup-ssh-keys.sh` para copiar una clave SSH publica a los cinco contenedores y permitir la conexion con Ansible. Ejecutar desde WSL, despues de levantar los contenedores:
 
 ```bash
 chmod +x setup-ssh-keys.sh
